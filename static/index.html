@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./script.js"></script>
+    <title>Feather - Simple file upload</title>
+  </head>
+  <body onload="onLoad()">
+    <h1>Feather</h1>
+    <div class="page" id="dropzone">
+      <p>Upload area here...</p>
+    </div>
+    <div class="page hidden" id="uploadstage">
+      <div class="fileInfo">
+        <img src="" alt="No preview avaliable" />
+        <div class="meta">
+          <p class="fileName">file.txt</p>
+          <p class="fileType">file/type</p>
+          <p class="fileSize">1000 bytes</p>
+          <div class="buttons">
+            <button id="download" onclick="downloadFile()">Download</button>
+            <button id="upload" onclick="uploadFile()">Upload</button>
+          </div>
+        </div>
+      </div>
+      <progress class="hidden" max="100" value="1"></progress>
+      <a class="hidden" id="resultingurl"></a>
+    </div>
+  </body>
+</html>

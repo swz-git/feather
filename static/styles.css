@@ -1,0 +1,99 @@
+:root {
+  --color-foreground: #c8c8c8;
+  --color-foreground2: #909090;
+  --color-background: #0f0f0f;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --color-foreground: #1b1b1b;
+    --color-background: #ffffff;
+  }
+}
+
+html, body {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: Georgia,"Times New Roman",Times,serif;
+  color: var(--color-foreground);
+  background-color: var(--color-background);
+}
+
+/* .pages {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+.page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#dropzone {
+  width: 80%;
+  height: 40%;
+  border: solid var(--color-foreground) .25rem;
+  border-radius: 1rem;
+}
+.dropping {
+  border-color: lightblue;
+  border-style: dashed;
+}
+
+#uploadstage {
+  display: flex;
+  flex-direction: column;
+}
+.fileInfo {
+  display: flex;
+  justify-content: center;
+  gap: .5rem;
+  width: 100%;
+}
+.meta, .buttons {
+  display: flex;
+  flex-direction: column;
+}
+.meta p {
+  margin: 0px;
+}
+.fileName {
+  font-weight: 800;
+  font-size: 1.2rem;
+}
+.fileType, .fileSize {
+  font-size: 1rem;
+  color: var(--color-foreground2);
+}
+img {
+  height: 10rem;
+  width: auto;
+}
+progress {
+  height: 1.5rem;
+  width: 100%;
+}
+#resultingurl {
+  font-size: 1.5rem;
+  width: 100%;
+}
+button {
+  font-size: 1.2rem;
+  padding: .5rem 1rem;
+  margin: .15rem;
+}
+
+.hidden {
+  display: none !important;
+}
